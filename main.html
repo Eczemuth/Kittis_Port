@@ -1,0 +1,327 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Kitti's Port</title>
+    <link rel = "stylesheet" href = "style.css">
+    <script src = 'script.js'></script>
+</head>
+<body>
+    <div class="page page1">
+        <div class="bar"></div>
+        <div class="text greet">
+            <p>Kittipan's</p>
+            <p>PORTFOLIO</p>
+        </div>
+        <div class="text find">
+            <p>You'll find</p>
+        </div>
+        <div class="foot_bar"></div>
+        <div class="card_box">
+            <div class="card card1" onclick="scroll_to('page2')">
+                <div class="icon"></div>
+                <div class="text">My personal infomations</div>
+            </div>
+            <div class="card card2" onclick="scroll_to('page3')">
+                <div class="icon"></div>
+                <div class="text">My previous competitions</div>
+
+            </div>
+            <div class="card card3" onclick="scroll_to('page4')">
+                <div class="icon"></div>
+                <div class="text">My confirmation certificates</div>
+            </div>
+            <div class="card card4" onclick="scroll_to('page5')">
+                <div class="icon"></div>
+                <div class="text">My contact</div>
+            </div>
+        </div>
+    </div>
+    <div class="page page2" id = 'page2'>
+        <div class="sec sec1">
+            <div class="self_img"></div>
+            <div class="name">“Kittipan Onlay”</div>
+            <div class="head page2_head about_head">About me</div>
+            <div class="bio">Kittipan is a student study at 
+                Srisamrongchanupathum school.
+                He started interested in computer 
+                since he was a kid. And when he study 
+                in highschool he find out that he loves 
+                programming. So he want to be a 
+                software engineer. He hope this website
+                can show you how prepared he is.
+            </div>
+        </div>
+        <div class="sec sec2">
+            <div class="p_info">
+                <div class="head page2_head p_info_head">Personal Info</div>
+                <div class="info">
+                    <p>Nickname : Best</p>
+                    <p>Date of birth : 27 JUN 2003</p>
+                    <p>Age : 18</p>
+                    <p>Nationality : Thai</p>
+                </div>
+            </div>
+            <div class="skills">
+                <div class="head page2_head skill_head">Skills</div>
+                <div class="talent c">
+                    <div class="lang">C,C++</div>
+                    <div class="lv">70% more to be Intermediat</div>
+                    <div class="bar">
+                        <div class="frame">
+                            <div class="black"></div>
+                            <div class="scale c_scale_bar"></div>
+                        </div>
+                    </div>
+                </div>
+                <div class="talent html">
+                    <div class="lang">HTML,CSS</div>
+                    <div class="lv">35% more to be Intermediat</div>
+                    <div class="bar">
+                        <div class="frame">
+                            <div class="black"></div>
+                            <div class="scale html_scale_bar"></div>
+                        </div>
+                    </div>
+                </div>
+                <div class="talent python">
+                    <div class="lang">Python</div>
+                    <div class="lv">97% more to be Intermediat</div>
+                    <div class="bar">
+                        <div class="frame">
+                            <div class="black"></div>
+                            <div class="scale python_scale_bar"></div>
+                        </div>
+                    </div>
+                </div>
+                <div class="talent speak">
+                    <div class="lang">Speaking skill</div>
+                    <div class="lv">50% more to be Advance</div>
+                    <div class="bar">
+                        <div class="frame">
+                            <div class="black"></div>
+                            <div class="scale speak_scale_bar"></div>
+                        </div>
+                    </div>
+                </div>
+                
+            </div>
+        </div>
+        <div class="sec sec3">
+            <div class="head page2_head edu_head">Education</div>
+            <div class="loca">
+                <div class="bar_tab">
+                    <div class="bar_box1">
+                        <div class="b1"></div>
+                    </div>
+                    <div class="bar_box2">
+                        <div class="b2"></div>
+                    </div>
+                    <div class="bar_box3">
+                        <div class="b3"></div>
+                    </div>
+                    <div class="bar_box4">
+                        <div class="b4"></div>
+                    </div>
+                </div>
+                <div class="pic_box">
+                    <div class="page2_icon pic1"></div>
+                    <div class="page2_icon pic2"></div>
+                    <div class="page2_icon pic3"></div>
+                    <div class="page2_icon pic4"></div>
+                </div>
+            </div>
+            <div class="edu_text_box">
+                <div class="past_school kin">
+                    <div class="year">2007-2009</div>
+                    <div class="rank">Kindergaten</div>
+                    <div class="school">Srisamrongwithaya</div>
+                </div>
+                <div class="past_school elem">
+                    <div class="year">2010-2015</div>
+                    <div class="rank">Elementary</div>
+                    <div class="school">Banklongtankrajangjinda</div>
+                </div>
+                <div class="past_school juhi">
+                    <div class="year">2016-2018</div>
+                    <div class="rank">Junior highschool</div>
+                    <div class="school">Srisamrongchanupathum</div>
+                </div>
+                <div class="past_school sehi">
+                    <div class="year">2019-2021</div>
+                    <div class="rank">Senior highschool</div>
+                    <div class="school">Srisamrongchanupathum</div>
+                </div>
+            </div>
+        </div>
+    </div>
+    <div class="page page3" id = 'page3'>
+        <div class="head act_head">Activities</div>
+        <div class="below">
+            <div class="bar right_bar" onclick="change_pic(1)">
+                <div class="arrow right_arrow"></div>
+            </div>
+            <div class="bar left_bar" onclick="change_pic(-1)">
+                <div class="arrow left_arrow"></div>
+            </div>
+            <div class="showcase">
+                <div class="showcase_text">ได้รับรางวัลรองชนะเลิศอันดับ 3 จากการแข่งขันตอบปัญหาวิชาการ ACADEMIC WAR สงครามแห่งปัญญา ครั้งที่ 3 
+                    จัดโดย T-CASter ร่วมกับนิสิตจามหาวิทยาลัยจุฬาลงกรณ์ ในรายวิชา คอมพิวเตอร์
+                </div>
+            
+            </div>
+        </div>
+    </div>
+    <div class="page page4" id = 'page4'>
+        <div class="head cer_head">Certificates</div>
+        <div class="below">
+            <div class = 'row'>
+                <div class = 'cer cer1'>
+                    <div class = 'cer_text_box'>
+                        <div class="cer_text">
+                            ได้รับเกียรติบัตรระดับเพชรจากการแข่งขัน
+                            “Academic war สงครามแห่งปัญญา ครั้งที่ 3” ที่จัดขึ้นโดย
+                            TCASter และ นิสิตจุฬา ในรายวิชาคอมพิวเตอร์
+                        </div>
+                    </div>
+                </div>
+                <div class = 'cer cer2'>
+                    <div class = 'cer_text_box'>
+                        <div class="cer_text">
+                            ได้รับรางวัลระดับเหรียญเงินจากการแข่งขัน
+                            การออกแบบสิ่งของเครื่องใช้ด้วยโปรแกรมคอมพิวเตอร์
+                            งานศิลปหัตถกรรมนักเรียน ระดับชาติครั้งที่ 69
+                        </div>
+                    </div>
+                </div>
+                <div class = 'cer cer3'>
+                    <div class = 'cer_text_box'>
+                        <div class="cer_text">
+                            สำเร็จการฝึกอบรมปฏิบัติการ “DRONE STEM เทคโนโลยี
+                            อากาศยานไร้คนขับกับการเรียนรู้แบบ STEM”
+                            ณ มหาวิทยาลัยนเรศวร
+                        </div>
+                    </div>
+                </div>
+            </div>
+            <div class = 'row'>
+                <div class = 'cer cer4'>
+                   <div class = 'cer_text_box'>
+                        <div class="cer_text">
+                            ได้ผ่านการเรียนออนไลน์ ในรายวิชา
+                            โปรแกรม Python สำหรับการคำนวณทางวิทยาศาสตร์
+                            โดย มหาวิทยาลัยนเรศวร
+                        </div>
+                   </div>
+                </div>
+                <div class = 'cer cer5'>
+                    <div class = 'cer_text_box'>
+                        <div class="cer_text">
+                            ได้ผ่านการเรียนออนไลน์ ในรายวิชา
+                            ภาษา Python สำหรับวิทยาการข้อมูล
+                            โดย มหาวิทยาลัยเทคโนโลยีราชมงคลธัญบุรี
+                        </div>
+                    </div>
+                </div>
+                <div class = 'cer cer6'>
+                    <div class = 'cer_text_box'>
+                        <div class="cer_text">
+                            ได้รับรางวัลระดับเหรียญทอง รองชนะเลิศอันดับที่ 1
+                            จากการแข่งขัน การสร้างเกมสร้างสรรค์จากคอมพิวเตอร์
+                            งานศิลปหัตถกรรมนักเรียน ระดับเขตพื้นที่การศึกษา ครั้งที่ 69
+                        </div>
+                    </div>
+                </div>
+            </div>
+            <div class = 'row'>
+                <div class = 'cer cer7'>
+                    <div class = 'cer_text_box'>
+                        <div class="cer_text">
+                            ผ่านการนำเสนอโครงงานคอมพิวเตอร์ 
+                            เรื่อง Auto Fill Certificates
+                            กับคุณครูที่ปรึกษารายวิชาคอมพิวเตอร์
+                        </div>
+                    </div>
+                </div>
+                <div class = 'cer cer8'>
+                    <div class = 'cer_text_box'>
+                        <div class="cer_text">
+                            ได้รับเกียรติบัตรจากการปฏิบัติหน้าที่เป็นสภานักเรียน
+                            และรางวัลจากการได้รับคัดเลือกให้เป็น
+                            สภานักเรียนต้นแบบระดับประเทศประจำปี 2563
+                        </div>
+                    </div>
+                </div>
+                <div class = 'cer cer9'>
+                    <div class = 'cer_text_box'>
+                        <div class="cer_text">
+                            ได้เข้าร่วมการแข่งขันตอบปัญหาวิทยาศาสตร์
+                            เนื่องในงานสัปดาห์วิทยาศาสตร์ส่วนภูมิภาค ครั้งที่ 32
+                        </div>
+                    </div>
+                </div>
+            </div>
+            <div class = 'row'>
+                <div class = 'cer cer10'>
+                    <div class = 'cer_text_box'>
+                        <div class="cer_text">
+                            เข้าร่วมการแข่งขันตอบปัญหาภาษาอังกฤษ
+                            KPRU ENGLISH COMPETITION
+                            จัดโดย ศูนย์ภาษาอังกฤษ มหาวิทยาลัยราชภัฏกำแพงเพชร
+                        </div>
+                    </div>
+                </div>
+                <div class = 'cer cer11'>
+                    <div class = 'cer_text_box'>
+                        <div class="cer_text">
+                            เข้าร่วมกิจกรรม “ประกวดโครงงานวิทยาศาสตร์การเกษตร”
+                            ในหัวข้อ “เปรียบเทียบการยืดอายุการเก็บรักษากระชาย”
+                            ในงานเกษตรนเรศวร ครั้งที่ 16
+                        </div>
+                    </div>
+                </div>
+                <div class = 'cer cer12'>
+                    <div class = 'cer_text_box'>
+                        <div class="cer_text">
+                            ได้รับรางวัลเป็นนักเรียนที่มีความสามารถดีเด่น
+                            ด้านการเป็นผู้นำ-ผู้ตามที่ดีละมีจิตสาธารณะ
+                        </div>
+                    </div>
+                </div>
+            </div>
+        </div>
+    </div>
+    <div class="page page5" id = 'page5'>
+        <div class="sec">
+            <div class="page5_sec1">
+                <div class="thanks">Thank you for visiting</div>
+            </div>
+            <div class="page5_sec2">
+                <div class="icon address_icon"></div>
+                <div class="page5_text address">
+                    บ้านเลขที่ 64 ม.1 ต.คลองตาล 
+                    อ.ศรีสำโรง จ.สุโขทัย 64120
+                </div>
+                <div class="icon tel_icon"></div>
+                <div class="page5_text tel">
+                    095-313 8407
+                </div>
+                <div class="icon mail_icon" onclick="window.open('https://www.facebook.com/kittibest.onlay', '_blank');"></div>
+                <div class="page5_text email">
+                    dark97975@gmail.com
+                </div>
+                <div class="icon fb_icon" onclick="window.open('https://www.facebook.com/kittibest.onlay', '_blank');"></div>
+                <div class="page5_text fb">
+                    Kitti-Best Onlay
+                </div>
+                <div class="icon github_icon" onclick="window.open('https://github.com/Eczemuth', '_blank');"></div>
+                <div class="page5_text github">
+                    https://github.com/Eczemuth
+                </div>
+            </div>
+        </div>
+    </div>
+</body>
+</html>
