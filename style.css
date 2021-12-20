@@ -3,12 +3,16 @@ html{
     
 }
 body{
+    position: relative;
     margin: 0;
     padding: 0;
     color: #ffffff;
     font-family: 'IBM Plex Sans Thai';
     font-weight: 500;
     background-color: #121212;
+
+    display: grid;
+    grid-template-columns: 100vw;
 }
 .head{
     background-position: 100%;
@@ -25,36 +29,47 @@ body{
     transition: ease all 0.4s;
 }
 .page{
-    position: absolute;
-    width: 100%;
-    height: 100%;
+    position: relative;
+    width: 100vw;
+    height: 100vh;
 }
 .page1{
-    width: 100%;
-    height: 100%;
+    background-size: 1366px;
+    background-position: center top;
     background-image: url('bg/bg.jpg');
     background-repeat: no-repeat;
 }
-.page1 > .bar{
+.intro{
     position: absolute;
-    top: 5%;
     left: 10%;
-    background-color: #ffffff;
-    width: 10px;
-    height: 300px;
+    top: 5%;
+    width: 35%;
+    height: 45%;
 }
-.page1 > .text{
+.intro > .bar{
     position: absolute;
-    left: 13%;
-}
-.greet{
     top: 0;
-    font-size: 5vw;
-    line-height: 0px;
+    left: 0;
+    background-color: #ffffff;
+    width: max(0.5vw,5px);
+    height: 100%;
+}
+.page1_text{
+    position: absolute;
+    left: 10px;
+    line-height: 100%;
+    font-size: max(5vw,50px);
+    white-space: nowrap;
+}
+.kittipan{
+    top: 0;
+}
+.port{
+    top: 70px;
 }
 .find{
-    top: 37%;
-    font-size: 3vw;
+    font-size: max(3vw,30px);
+    bottom: 0;
 }
 .foot_bar{
     position: absolute;
@@ -67,7 +82,7 @@ body{
     position: absolute;
     bottom: 34px;
     width: 100%;
-    height: 255px;
+    height: 39%;
     
     display: flex;
     flex-direction: row;
@@ -80,14 +95,18 @@ body{
 }
 .card{
     position: relative;
-    width: 200px;
-    height: 255px;
+    width: 13.3vw;
+    height: 17vw;
+    min-width: 70px;
+    min-height: calc(70px *(17/13.3));
     background-color: #ffffff;
     border-radius: 20px;
 }
 .card > .text{
-    position: relative;
-    top: 170px;
+    text-align: center;
+    position: absolute;
+    bottom: -10px;
+    width: 100%;
     opacity: 0;
     transition: ease all 0.4s;
 }
@@ -97,8 +116,8 @@ body{
     top: 50%;
     transform: translate(-50%,-50%);
     border-radius: 50%;
-    width: 100px;
-    height: 100px;
+    width: 7vw;
+    height: 7vw;
     background-size: cover;
     transition: ease all 0.6s;
 }
@@ -115,18 +134,17 @@ body{
     background-image: url("icon/page1_4.png");
 }
 .card:hover > .text{
-    top: 160px;
+    bottom: 10px;
     transition: ease all 0.4s;
     opacity: 1;
 }
 .card:hover > .icon{
     top: 35%;
-    width: 70px;
-    height: 70px;
+    width: 5vw;
+    height: 5vw;
 }
 /* ################################################################ */
 .page2{
-    top: 100%;
     display: flex;
     flex-direction: row;
     align-items: center;
@@ -139,9 +157,8 @@ body{
 .self_img{
     position: absolute;
 
-    height:0;
-    width:55%;
-    padding-bottom:55%;
+    width:50%;
+    padding-bottom:50%;
 
     top: 6%;
     left: 50%;
@@ -160,8 +177,9 @@ body{
     text-align: center;
     white-space: nowrap;
     transform: translate(-50%,0%);
-    font-size: 2.6vw;
+    font-size: max(2.6vw,30px);
 }
+
 .bio{
     position: absolute;
     top: 57%;
@@ -169,41 +187,50 @@ body{
     width:80%;
     transform: translate(-50%,0%);
     text-align: center;
-    font-size: 1.3vw;
+    font-size: max(1.3vw,13px);
 }
 .page2_head{
     position: absolute;
-    top: 6%;
     left: 1.5%;
     white-space: nowrap;
-    font-size: 4vw;
+    font-size: max(4vw,40px);
+}
+.p_info{
+    position: absolute;
+    width: 90%;
+    height: 40%;
+    left: 50%;
+    transform: translate(-50%,0);
 }
 .about_head{
     position: absolute;
     top: 52%;
     left: 50%;
-    width: 60%;
+    width: 65%;
     transform: translate(-50%,-50%);
     text-align: center;
     white-space: nowrap;
-    font-size: 4.6vw;
+    font-size: max(4.6vw,46px);
 
 }
 .info{
     position: absolute;
-    top: 15%;
+    top: 25%;
     left: 1.5%;
     white-space: nowrap;
-    font-size: 1.8vw;
+    font-size: max(1.8vw,18px);
 
     line-height: 1vw;
     transition: ease all 0.4s;
 }
 .skills{
     position: absolute;
-    width: 100%;
+    width: 90%;
     height: 60%;
     top: 40%;
+
+    left: 50%;
+    transform: translate(-50%);
 
     display: flex;
     flex-direction: column;
@@ -214,7 +241,7 @@ body{
 }
 .skill_head{
     position: relative;
-    width: 30%;
+    width: 35%;
     height: 80px;
     top: 0;
     line-height: 55px;
@@ -222,44 +249,31 @@ body{
 .talent{
     position: relative;
     width: 100%;
-    height: 71px;
+    height: 8vh;
 }
 .lang{
     position: absolute;
-    top: 0px;
+    top: -14px;
     left: 1.5%;
-    font-size: 2vw;
+    font-size: max(2vw,20px);
     width: auto;
 }
 .lv{
     position: absolute;
-    top: 4px;
+    top: -14px;
     right: 0;
     text-align: right;
-    font-size: 1.3vw;
+    font-size: max(1.3vw,13px);
 }
-.frame{
+.talent > .bar{
     position: absolute;
-    top: 20px;
-    width: 100%;
-    height: 20px;
-    background-color: #ffffff;
-}
-.black{
-    position: absolute;
-    top: 50%;
-    left: 50%;
-    transform: translate(-50%,-50%);
     width: 99%;
-    height: 16px;
-    background-color: #121212;
+    height: 3vh;
+    border: 2px solid #ffffff;
 }
 .scale{
     position: absolute;
-    top: 50%;
-    left: 2px;
-    transform: translate(0,-50%);
-    height: 16px;
+    height: inherit;
 
     background-position: 100%;
     background-size: 300% 100%;
@@ -268,6 +282,7 @@ body{
 }
 .c_scale_bar{
     width: 30%;
+
 }
 .html_scale_bar{
     width: 65%;
@@ -278,6 +293,7 @@ body{
 .speak_scale_bar{
     width: 50%;
 }
+
 .scale:hover{
     background-position: 0 0;
 }
@@ -296,18 +312,20 @@ body{
 }
 .past_school{
     width: inherit;
-    height: 100px;
+    height: 20%;
     transition: ease all 0.4s;
+   
+    margin-bottom: 30px;
 }
 .year{
-    font-size: 2vw;
+    font-size: max(2vw,20px);
     margin-bottom: 5px;
 }
 .rank{
-    font-size: 1.3vw;
+    font-size: max(1.3vw,13px);
 }
 .school{
-    font-size: 1.6vw;
+    font-size: max(1.6vw,16px);
 }
 .loca{
     position: absolute;
@@ -315,47 +333,26 @@ body{
     bottom: 0;
     width: 13%;
     height: 83%;
-}
-.pic_box{
-    position: absolute;
-    left: 50%;
-    top: 50%;
-    transform: translate(-50%,-50%);
-    width: 100%;
-    height: 100%;
 
-    display: flex;
-    flex-direction: column;
-    justify-content: space-between;
-    align-items: flex-start;
-    align-content: flex-start;
+    background-image: url('icon/loca.jpg');
+    background-size: cover;
+    background-position: top center;
+    background-repeat: no-repeat;
 }
 .page2_icon{
-    width: 100%;
-    height: 100px;
+    width: max(4.2vw,50px);
+    height: max(4.2vw,50px);
     background-image: url("icon/loca.png");
-    background-size: 80%;
+    background-size: 100%;
     background-repeat: no-repeat;
     background-position: top center;
-}
-.bar_tab{
-    position: absolute;
-    left: 50%;
-    top: 50%;
-    transform: translate(-50%,-50%);
-    width: 100%;
-    height: 100%;
 
-    display: flex;
-    flex-direction: column;
-    justify-content: space-between;
-    align-items: center;
-    align-content: flex-start;
 }
-.bar_tab > .bar_box1,.bar_box2,.bar_box3{
+.bar_box1,.bar_box2,.bar_box3{
     position: relative;
+    top: -2%;
     width: 100%;
-    height: 27%;
+    height: 15%;
 }
 .bar_tab > .bar_box4{
     position: relative;
@@ -368,7 +365,7 @@ body{
     bottom: 0;
     transform: translate(-50%,0);
     width: 4px;
-    height: 80%;
+    height: 100%;
     background:linear-gradient(to bottom, #9f00f1 0,  #f90c9d 50%, #121212 100%);
     transition: ease all .4s;
 }
@@ -380,8 +377,6 @@ body{
     transition: ease all 0.4s;
 }
 .page3{
-    top: 200%;
-
     display: flex;
     flex-direction: column;
     justify-content:flex-start;
@@ -392,7 +387,7 @@ body{
     position: absolute;
     width: 280px;
     height: 12%;
-    font-size: 4vw;
+    font-size: max(4vw,40px);
     text-align: center;
 }
 .page3 > .below{
@@ -423,7 +418,7 @@ body{
     width: 100%;
     height: 40px;
 
-    
+    background-size: contain;
     background-repeat: no-repeat;
     background-position: center;
 }
@@ -442,6 +437,7 @@ body{
     transform: translate(-50%,-50%);
     background-image: url('act/act1.jpg');
     background-size: cover;
+    background-position: center;
     transition: ease all 0.4s;
 }
 .showcase_text{
@@ -457,25 +453,19 @@ body{
     transition: ease all 1s;
 }
 .page4{
-    position: absolute;
-    top: 300%;
-    width: 100%;
-    height: 100%;
     display: flex;
     flex-direction: column;
     justify-content:flex-start;
     align-content: center;
     align-items: center;
     background-color: #121212;
-
-    
 }
 .cer_head{
     position: absolute;
     top: 0;
     width: 350px;
     height: 12%;
-    font-size: 4vw;
+    font-size: max(4vw,40px);
     text-align: center;
 }
 .page4 > .below{
@@ -489,15 +479,14 @@ body{
     align-items: center;
     align-content: center;
     
-    font-size: 1.2vw;
     line-height: 1.7vw;
     text-align: center;
     color:#121212;
 }
 .cer{
     position: relative;
-    width: 237px;
-    height: 168px;
+    width: 15.8vw;
+    height: 11.17vw;
     padding-bottom: 1.414%;
     border-radius:5px;
 
@@ -516,8 +505,8 @@ body{
 }
 .cer > .cer_text_box{
     position: relative;
-    width: 237px;
-    height: 168px;
+    width: inherit;
+    height: inherit;
     padding-bottom: 1.6%;
     background-color: #ffffff;
     opacity: 0;
@@ -530,6 +519,7 @@ body{
     transform: translate(-50%,-50%);
     width: 90%;
     height: auto;
+    font-size: max(1.2vw,12px);
 }
 .cer:hover > .cer_text_box{
     border-radius:5px;
@@ -590,8 +580,6 @@ body{
     
 }
 .page5{
-    position: absolute;
-    top: 400%;
     width: 100%;
     height: 500px;
     background-color: #9f00f1;
@@ -601,7 +589,7 @@ body{
     width: 100%;
     height: 100%;
     
-    font-size: 1.6vw;
+    font-size: max(1.6vw,16px);
     color: #ffffff;
     background-color: #9f00f1;
 }
@@ -618,7 +606,7 @@ body{
     left: 50%;
     transform:translate(-50%,-50%);
 
-    font-size: 5.3vw;
+    font-size: max(5.3vw,53px);
     white-space: nowrap;
 
     background-image: -webkit-linear-gradient(0deg,#f90c9d, #9f00f1);
@@ -640,22 +628,20 @@ body{
     align-items: flex-start;
     background-color: #9f00f1;
 }
+.page5_text{
+    position: relative;
+    left: 10px;
+    width: 90%;
+    height: auto;
+}
 .page5_sec2 > .icon{
     position: relative;
     left: 10px;
     width: 50px;
     height: 50px;
     border-radius: 50%;
-    
-}
-.github_icon:hover,.fb_icon:hover{
-    background-color: #121212;
-}
-.page5_text{
-    position: relative;
-    left: 10px;
-    width: 90%;
-    height: auto;
+
+    background-size: cover;
 }
 .address_icon{
     background-image: url('icon/page5_1.png');
@@ -663,16 +649,47 @@ body{
 .mail_icon{
     background-image: url('icon/page5_2.png');
 }
+.tel_icon{
+    background-image: url('icon/page5_4.png');
+}
 .fb_icon{
     cursor: pointer;
     background-image: url('icon/page5_3.png');
     transition: ease all 0.4s;
-}
-.tel_icon{
-    background-image: url('icon/page5_4.png');
 }
 .github_icon{
     cursor: pointer;
     background-image: url('icon/page5_5.png');
     transition: ease all 0.4s;
 }
+.github_icon:hover,.fb_icon:hover{
+    background-color: #121212;
+}
+@media screen and (orientation:portrait){
+    .page2{
+        flex-direction: column;
+        height: 300vh;
+    }
+    .page2 > .sec{
+        height: 100vh;
+        width: 100vw;
+        
+    }
+    .sec > .sec1{
+        height: 100vh;
+        width: 90%;
+        top: 0vh;
+        background-color: chartreuse;
+    }
+    .sec > .sec2{
+        height: 100vh;
+        width: 90%;
+        top: 100vh;
+    }
+    .sec > .sec3{
+        height: 100vh;
+        width: 90%;
+        top: 200vvh;
+    }
+  }
+  
