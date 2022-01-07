@@ -500,6 +500,7 @@ height: auto;
 font-size: 1rem;
 }
 .cer:hover > .cer_text_box{
+border-radius: 5%;
 opacity: 100%;
 background-color:rgba(255, 255, 255, 80%);
 } 
@@ -566,8 +567,7 @@ top: 50%;
 left: 50%;
 transform:translate(-50%,-50%);
 
-
-white-space: nowrap;
+text-align: center;
 
 background-image: -webkit-linear-gradient(0deg,#f90c9d, #9f00f1);
 background-clip: text;
@@ -626,6 +626,116 @@ transition: ease all 0.4s;
 .github_icon:hover,.fb_icon:hover{
 background-color: #121212;
 }
+@media screen and (orientation:portrait){
+  .page1{
+    width: 100vw;
+    height: 100vh;
+  }
+  .card{
+    width: 10rem;
+    height: 12.5rem;
+  }
+  .intro{
+    height: 30%;
+  }
+  .foot_bar{
+    height: 50%;
+  }
+  .card_box{
+    bottom: 0;
+    height: 50%;
+  
+    display: grid;
+    grid-template-columns: auto auto;
+    align-items: center;
+    justify-content: space-evenly;
+  }
+  .page2{
+    flex-direction: column;
+    height: 300vh;
+  }
+  .page2 > .sec{
+    height: 100vh;
+    width: 100vw;
+  }
+  .sec > .sec1{
+    height: 100vh;
+    width: 90%;
+    top: 0vh;
+  }
+  .sec > .sec2{
+    height: 100vh;
+    width: 90%;
+    top: 100vh;
+  }
+  .sec > .sec3{
+    height: 100vh;
+    width: 90%;
+    top: 200vvh;
+  }
+  .self_img{
+    width: 15rem;
+    height: 15rem;
+  }
+  .sec1 > .name{
+    width: 100%;
+    font-size: 3rem;
+  }
+  .bio{
+    font-size: 1.2rem;
+  }
+  .page2_head{
+    font-size: 3.75rem;
+  }
+  .lv{
+    font-size: 1.2rem;
+  }
+  .year{
+    font-size: 1.875rem;
+  }
+  .rank{
+    font-size: 1.2rem;
+  }
+  .p_info{
+    height: 35%;
+  }
+  .skills{
+    height: 65%;
+  }
+  p{
+    font-size: 1.6rem;
+  }
+  .showcase{
+    top: 30%;
+  }
+  .page3 > .below > .bar{
+    top:30%;
+  }
+  .showcase_text{
+    top: 130%;
+    text-align: center;
+  }
+  .page4{
+    height: fit-content;
+  }
+  .page5{
+    height: 100vh;
+  }
+  .page5_sec1{
+    width: 100%;
+    height: 20%;
+  }
+  .page5_sec2{
+    width: 100%;
+    height: 70%;
+    left: 0px;
+    top: 25%;
+  
+    font-size: 1.5rem;
+    text-align: center;
+    align-items: center;
+    }
+  }
 @media screen and (max-width: 800px){
   html{
     font-size: 18px;
@@ -638,13 +748,26 @@ background-color: #121212;
     height: 40%;
     top:30%;
   }
-  .page5_sec1{
+  .page5_sec1 > .thanks > p{
     font-size: 3.5rem;
+  }
+}
+@media screen and (max-width: 600px){
+  .card{
+    width: 8rem;
+    height: 10rem;
+  }
+  .page5_sec1 > .thanks > p{
+    font-size: 2rem;
   }
 }
 @media screen and (max-width: 400px){
   html{
     font-size: 14px;
+  }
+  .card{
+    width: 9rem;
+    height: 11.25rem;
   }
   .showcase{
     height: 30%;
@@ -653,118 +776,8 @@ background-color: #121212;
     height: 30%;
   }
   
-  .page5_sec1{
+  .page5_sec1 > .thanks > p{
     font-size: 2.5rem;
-  }
-}
-@media screen and (orientation:portrait){
-.page1{
-  width: 100vw;
-  height: 100vh;
-}
-.card{
-  width: 10rem;
-  height: 12.5rem;
-}
-.intro{
-  height: 30%;
-}
-.foot_bar{
-  height: 50%;
-}
-.card_box{
-  bottom: 0;
-  height: 50%;
-
-  display: grid;
-  grid-template-columns: auto auto;
-  align-items: center;
-  justify-content: space-evenly;
-}
-.page2{
-  flex-direction: column;
-  height: 300vh;
-}
-.page2 > .sec{
-  height: 100vh;
-  width: 100vw;
-}
-.sec > .sec1{
-  height: 100vh;
-  width: 90%;
-  top: 0vh;
-}
-.sec > .sec2{
-  height: 100vh;
-  width: 90%;
-  top: 100vh;
-}
-.sec > .sec3{
-  height: 100vh;
-  width: 90%;
-  top: 200vvh;
-}
-.self_img{
-  width: 15rem;
-  height: 15rem;
-}
-.sec1 > .name{
-  width: 100%;
-  font-size: 3rem;
-}
-.bio{
-  font-size: 1.2rem;
-}
-.page2_head{
-  font-size: 3.75rem;
-}
-.lv{
-  font-size: 1.2rem;
-}
-.year{
-  font-size: 1.875rem;
-}
-.rank{
-  font-size: 1.2rem;
-}
-.p_info{
-  height: 35%;
-}
-.skills{
-  height: 65%;
-}
-p{
-  font-size: 1.6rem;
-}
-.showcase{
-  top: 30%;
-}
-.page3 > .below > .bar{
-  top:30%;
-}
-.showcase_text{
-  top: 130%;
-  text-align: center;
-}
-.page4{
-  height: fit-content;
-}
-.page5{
-  height: 100vh;
-}
-.page5_sec1{
-  width: 100%;
-  height: 20%;
-}
-.page5_sec2{
-  width: 100%;
-  height: 70%;
-  left: 0px;
-  top: 25%;
-
-  font-size: 1.5rem;
-  text-align: center;
-  align-items: center;
   }
 }
   
