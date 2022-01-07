@@ -557,6 +557,7 @@ position: absolute;
 left: 0;
 width: 60%;
 height: 100%;
+font-size: 3.5rem;
 background-color: #ffffff;
 }
 .page5_sec1 > .thanks{
@@ -565,7 +566,7 @@ top: 50%;
 left: 50%;
 transform:translate(-50%,-50%);
 
-font-size: 3.5rem;
+
 white-space: nowrap;
 
 background-image: -webkit-linear-gradient(0deg,#f90c9d, #9f00f1);
@@ -637,6 +638,9 @@ background-color: #121212;
     height: 40%;
     top:30%;
   }
+  .page5_sec1{
+    font-size: 3.5rem;
+  }
 }
 @media screen and (max-width: 400px){
   html{
@@ -648,18 +652,9 @@ background-color: #121212;
   .page3 > .below > .bar{
     height: 30%;
   }
-  .page4{
-    height: fit-content;
-  }
-  .cer{
-    position: relative;
-    width: 13rem;
-    height: 9.2rem;
-    border-radius: 5%;
-    margin: 0.5rem 3rem;
-    
-    background-size: cover;
-    background-position: center;
+  
+  .page5_sec1{
+    font-size: 2.5rem;
   }
 }
 @media screen and (orientation:portrait){
@@ -751,8 +746,8 @@ p{
   top: 130%;
   text-align: center;
 }
-.page4 > .below{
-  grid-template-columns: auto auto;
+.page4{
+  height: fit-content;
 }
 .page5{
   height: 100vh;
