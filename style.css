@@ -790,6 +790,9 @@ background-color: #121212;
     height: 40%;
     top:30%;
   }
+  .cer_head > .to_read{
+    font-size: 1.2rem;
+    }
   .page5_sec1 > .thanks > p{
     font-size: 2.5rem;
   }
