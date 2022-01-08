@@ -30,6 +30,19 @@ background-clip: text;
 
 transition: ease all 0.4s;
 }
+.top{
+  position: fixed;
+  width: 3.7rem;
+  height: 3.7rem;
+  right: 0.5rem;
+  bottom: 0.5rem;
+  border-radius: 50%;
+  background-image: url('icon/to_top.png');
+  background-size: contain;
+  z-index: 99;
+  border: #ffffff solid 0.3rem;
+  box-shadow: 0.2rem 0.2rem 0.7rem rgba(12, 12, 12, 50%);
+}
 .page{
 position: relative;
 width: 100vw;
@@ -444,6 +457,7 @@ color: #ffffff;
 transition: ease all 1s;
 }
 .page4{
+padding-bottom: auto;
 display: flex;
 flex-direction: column;
 justify-content:flex-start;
@@ -458,8 +472,20 @@ width: fit-content;
 height: fit-content;
 text-align: center;
 }
+.cer_head > .header{
+  top:0;
+}
+.cer_head > .to_read{
+  position: absolute;
+  width: fit-content;
+  left: 50%;
+  transform: translate(-50%,0);
+  bottom: -0.5rem;
+  font-size: 1.5rem;
+  color: #ffffff;
+  }
 .page4 > .below{
-  position: relative;
+  position: absolute;
   width: 100%;
   height: fit-content;
   bottom: 0;
@@ -477,7 +503,7 @@ text-align: center;
   position: relative;
   width: 13rem;
   height: 9.2rem;
-  border-radius: 5%;
+  border-radius:  10px;
   margin: 0.5rem 3rem;
   
   background-size: cover;
@@ -488,7 +514,7 @@ position: relative;
 width: inherit;
 height: inherit;
 opacity: 0;
-border-radius: 5%;
+border-radius:  10px;
 transition: ease all 0.4s;
 }
 .cer_text{
@@ -501,7 +527,7 @@ height: auto;
 font-size: 1rem;
 }
 .cer:hover > .cer_text_box{
-border-radius: 5%;
+border-radius:  10px;
 opacity: 100%;
 background-color:rgba(255, 255, 255, 80%);
 } 
@@ -541,7 +567,9 @@ background-image: url('cer/cer11.jpg');
 .cer12{
 background-image: url('cer/cer12.jpg');
 }
-
+.page5{
+  height: 70vh;
+}
 .page5 > .sec{
 position: relative;
 bottom: 0;
@@ -722,9 +750,11 @@ background-color: #121212;
   .page4{
     height: fit-content;
   }
-  .page5{
+  .page4 > .below{
     position: relative;
-    height: 100vh;
+  }
+  .page5{
+    height: 90vh;
   }
   .page5_sec1{
     width: 100%;
@@ -767,6 +797,10 @@ background-color: #121212;
 @media screen and (max-width: 800px){
   html{
     font-size: 18px;
+  }
+  .card{
+    width: 8.3rem;
+    height: 10.375rem;
   }
   .showcase{
     height: 40%;
