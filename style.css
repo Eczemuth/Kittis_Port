@@ -567,7 +567,6 @@ left: 50%;
 transform:translate(-50%,-50%);
 
 text-align: center;
-white-space: nowrap;
 
 background-image: -webkit-linear-gradient(0deg,#f90c9d, #9f00f1);
 background-clip: text;
