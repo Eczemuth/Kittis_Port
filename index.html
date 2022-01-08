@@ -9,7 +9,8 @@
     <script src = 'script.js'></script>
 </head>
 <body>
-    <div class="page page1">
+    <div class="top" onclick="scroll_to('page1')"></div>
+    <div class="page page1" id = "page1">
         <div class="intro">
             <div class="bar"></div>
             <div class="page1_text kittipan">
@@ -20,6 +21,7 @@
             </div>
             <div class="page1_text find">
                 You'll find
+                <br>(Hover to read,Click to go)
             </div>
         </div>
         
@@ -147,7 +149,10 @@
         </div>
     </div>
     <div class="page page4" id = 'page4'>
-        <div class="head cer_head">Certificates</div>
+        <div class="cer_head">
+            <div class="head header">Certificates</div>
+            <div class="to_read">(Hover to read)</div>
+        </div>
         <div class="below">
             <div class = 'cer cer1'>
                 <div class = 'cer_text_box'>
@@ -260,7 +265,9 @@
     <div class="page page5" id = 'page5'>
         <div class="sec">
             <div class="page5_sec1">
-                <div class="thanks">Thank you for visiting</div>
+                <div class="thanks">
+                    <p>Thank you for visiting</p>
+                </div>
             </div>
             <div class="page5_sec2">
                 <div class="icon address_icon"></div>
