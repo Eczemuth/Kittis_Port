@@ -726,12 +726,12 @@ background-color: #121212;
     width: 100%;
     height: 20%;
   }
-  .page5_sec1 > .thanks{
-    background-color: #456219;
-  }
   .page5_sec1 > .thanks > p{
     font-size: xx-large;
     white-space: normal;
+  }
+  .page5_sec1 > .thanks{
+    height: fit-content;
   }
   .page5_sec2{
     width: 100%;
