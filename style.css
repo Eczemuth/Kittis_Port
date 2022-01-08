@@ -827,6 +827,9 @@ background-color: #121212;
   html{
     font-size: 14px;
   }
+  .find{
+    font-size: 1.8rem;
+  }
   .card{
     width: 9rem;
     height: 11.25rem;
