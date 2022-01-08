@@ -708,13 +708,15 @@ background-color: #121212;
     font-size: 1.6rem;
   }
   .showcase{
+    height: 40%;
     top: 30%;
   }
   .page3 > .below > .bar{
+    height: 40%;
     top:30%;
   }
   .showcase_text{
-    top: 130%;
+    top: 120%;
     text-align: center;
   }
   .page4{
@@ -764,7 +766,7 @@ background-color: #121212;
     height: 10rem;
   }
   .page5_sec1 > .thanks > p{
-    font-size: 2rem;
+    font-size:2.3rem;
   }
 }
 @media screen and (max-width: 400px){
@@ -782,7 +784,7 @@ background-color: #121212;
     height: 30%;
   }
   .page5_sec1 > .thanks > p{
-    font-size: 1.8rem;
+    font-size: 2.5rem;
   }
 }
   
