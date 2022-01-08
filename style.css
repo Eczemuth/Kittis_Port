@@ -557,7 +557,6 @@ position: absolute;
 left: 0;
 width: 60%;
 height: 100%;
-font-size: 3.5rem;
 background-color: #ffffff;
 }
 .page5_sec1 > .thanks{
@@ -572,6 +571,10 @@ background-image: -webkit-linear-gradient(0deg,#f90c9d, #9f00f1);
 background-clip: text;
 -webkit-background-clip: text;
 -webkit-text-fill-color: transparent;
+}
+.thanks > p{
+  font-size: 3.5rem;
+  white-space: nowrap;
 }
 .page5_sec2{
 position: absolute;
@@ -728,9 +731,6 @@ background-color: #121212;
   .page5_sec1 > .thanks > p{
     font-size: xx-large;
     white-space: normal;
-  }
-  .page5_sec1 > .thanks{
-    height: fit-content;
   }
   .page5_sec2{
     width: 100%;
