@@ -744,6 +744,26 @@ background-color: #121212;
     align-items: center;
     }
   }
+@media screen and (max-width: 1100px){
+  html{
+    font-size: 30px;
+  }
+  .card{
+    width: 7.2rem;
+    height: 9rem;
+  }
+  .showcase{
+    height: 40%;
+    top: 30%;
+  }
+  .page3 > .below > .bar{
+    height: 40%;
+    top:30%;
+  }
+  .page5_sec1 > .thanks > p{
+    font-size: 2.5rem;
+  }
+}
 @media screen and (max-width: 800px){
   html{
     font-size: 18px;
