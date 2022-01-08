@@ -488,6 +488,7 @@ position: relative;
 width: inherit;
 height: inherit;
 opacity: 0;
+border-radius: 5%;
 transition: ease all 0.4s;
 }
 .cer_text{
@@ -540,12 +541,10 @@ background-image: url('cer/cer11.jpg');
 .cer12{
 background-image: url('cer/cer12.jpg');
 }
-.page5{
-width: 100%;
-height: 500px;
-}
+
 .page5 > .sec{
 position: relative;
+bottom: 0;
 width: 100%;
 height: 100%;
 
@@ -568,6 +567,7 @@ left: 50%;
 transform:translate(-50%,-50%);
 
 text-align: center;
+white-space: nowrap;
 
 background-image: -webkit-linear-gradient(0deg,#f90c9d, #9f00f1);
 background-clip: text;
@@ -719,11 +719,15 @@ background-color: #121212;
     height: fit-content;
   }
   .page5{
+    position: relative;
     height: 100vh;
   }
   .page5_sec1{
     width: 100%;
     height: 20%;
+  }
+  .page5_sec1 > .thanks > p{
+    font-size:xx-large;
   }
   .page5_sec2{
     width: 100%;
@@ -748,17 +752,11 @@ background-color: #121212;
     height: 40%;
     top:30%;
   }
-  .page5_sec1 > .thanks > p{
-    font-size: 3.5rem;
-  }
 }
 @media screen and (max-width: 600px){
   .card{
     width: 8rem;
     height: 10rem;
-  }
-  .page5_sec1 > .thanks > p{
-    font-size: 2rem;
   }
 }
 @media screen and (max-width: 400px){
@@ -774,10 +772,6 @@ background-color: #121212;
   }
   .page3 > .below > .bar{
     height: 30%;
-  }
-  
-  .page5_sec1 > .thanks > p{
-    font-size: 2.5rem;
   }
 }
   
