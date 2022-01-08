@@ -636,6 +636,7 @@ background-size: cover;
 }
 .address_icon{
 background-image: url('icon/page5_1.png');
+transition: ease all 0.4s;
 }
 .mail_icon{
 background-image: url('icon/page5_2.png');
@@ -653,7 +654,7 @@ cursor: pointer;
 background-image: url('icon/page5_5.png');
 transition: ease all 0.4s;
 }
-.github_icon:hover,.fb_icon:hover{
+.github_icon:hover,.fb_icon:hover,.address_icon:hover{
 background-color: #121212;
 }
 @media screen and (orientation:portrait){
