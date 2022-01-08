@@ -727,7 +727,7 @@ background-color: #121212;
     height: 20%;
   }
   .page5_sec1 > .thanks > p{
-    font-size:xx-large;
+    font-size: auto;
   }
   .page5_sec2{
     width: 100%;
